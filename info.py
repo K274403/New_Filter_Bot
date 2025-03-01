@@ -61,8 +61,8 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'rkmovieszip@ybl')
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Aman:Aman@cluster0.nbk7t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Pooja:Pooja@cluster0.w4qx8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI2' ,"mongodb+srv://Pooja:Pooja@cluster0.w4qx8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2' ,"mongodb+srv://Aman:Aman@cluster0.nbk7t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rk_files')
 
