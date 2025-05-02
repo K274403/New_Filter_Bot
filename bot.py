@@ -60,8 +60,22 @@ async def Deendayal_start():
     b_users, b_chats = await db.get_banned()
     temp.BANNED_USERS = b_users
     temp.BANNED_CHATS = b_chats
+    try:
     await Media.ensure_indexes()
     await Media2.ensure_indexes()
+except Exception as e:
+    if "space quota" in str(e):
+        logging.warning("Primary DB is full. Switching to secondary DB.")
+        if DATABASE_URI2:
+            tempDict["indexDB"] = DATABASE_URI2
+            await choose_mediaDB()
+            await Media.ensure_indexes()
+            await Media2.ensure_indexes()
+        else:
+            logging.error("Missing second DB URI! Exiting...")
+            exit()
+    else:
+        raise  # Agar koi aur error hai, to usse raise kar dein
     stats = await clientDB.command('dbStats')
     free_dbSize = round(512-((stats['dataSize']/(1024*1024))+(stats['indexSize']/(1024*1024))), 2)
     if DATABASE_URI2 and free_dbSize<62: #if the primary db have less than 62MB left, use second DB.
