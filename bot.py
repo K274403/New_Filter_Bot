@@ -60,35 +60,18 @@ async def Deendayal_start():
     b_users, b_chats = await db.get_banned()
     temp.BANNED_USERS = b_users
     temp.BANNED_CHATS = b_chats
-    
-    try:
-        await Media.ensure_indexes()
-        await Media2.ensure_indexes()
-    except Exception as e:
-        if "space quota" in str(e):
-            logging.warning("Primary DB is full. Switching to secondary DB.")
-            if DATABASE_URI2:
-                tempDict["indexDB"] = DATABASE_URI2
-                await choose_mediaDB()
-                await Media.ensure_indexes()
-                await Media2.ensure_indexes()
-            else:
-                logging.error("Missing second DB URI! Exiting...")
-                exit()
-        else:
-            raise  # Agar koi aur error hai, to usse raise kar dein
-    
+    await Media.ensure_indexes()
+    await Media2.ensure_indexes()
     stats = await clientDB.command('dbStats')
     free_dbSize = round(512-((stats['dataSize']/(1024*1024))+(stats['indexSize']/(1024*1024))), 2)
-    if DATABASE_URI2 and free_dbSize < 62:  # If the primary DB has less than 62MB left, use second DB.
+    if DATABASE_URI2 and free_dbSize<62: #if the primary db have less than 62MB left, use second DB.
         tempDict["indexDB"] = DATABASE_URI2
         logging.info(f"Since Primary DB have only {free_dbSize} MB left, Secondary DB will be used to store datas.")
     elif DATABASE_URI2 is None:
-        logging.error("Missing second DB URI! \n\nAdd SECONDDB_URI now! \n\nExiting...")
+        logging.error("Missing second DB URI !\n\nAdd SECONDDB_URI now !\n\nExiting...")
         exit()
     else:
-        logging.info(f"Since primary DB have enough space ({free_dbSize}MB) left, it will be used for storing data.")
-    
+        logging.info(f"Since primary DB have enough space ({free_dbSize}MB) left, It will be used for storing datas.")
     await choose_mediaDB()    
     me = await DeendayalBot.get_me()
     temp.ME = me.id
@@ -97,27 +80,23 @@ async def Deendayal_start():
     temp.B_LINK = me.mention
     DeendayalBot.username = '@' + me.username
     DeendayalBot.loop.create_task(check_expired_premium(DeendayalBot))
-    
     logging.info(f"{me.first_name} with Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
     logging.info(LOG_STR)
     logging.info(script.LOGO)
-    
     tz = pytz.timezone('Asia/Kolkata')
     today = date.today()
     now = datetime.now(tz)
     time = now.strftime("%H:%M:%S %p")
     await DeendayalBot.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(temp.B_LINK, today, time))
-    
     app = web.AppRunner(await web_server())
     await app.setup()
     bind_address = "0.0.0.0"
     await web.TCPSite(app, bind_address, PORT).start()
     await idle()
-
+    
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     try:
         loop.run_until_complete(Deendayal_start())
     except KeyboardInterrupt:
         logging.info('Service Stopped Bye 👋')
-
