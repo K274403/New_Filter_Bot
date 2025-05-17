@@ -1,15 +1,15 @@
 <p align="center"> <img src="https://envs.sh/o6V.jpg"> </p>
-<h1 align="center"> 𝑫𝒆𝒆𝒏𝒅𝒂𝒚𝒂𝒍_𝒅𝒉𝒂𝒌𝒂𝒅 </h1>
+<h1 align="center"> RKMOVIESZIP </h1>
 
 **OWNER**
 <!-- > ## ⚠ <u>Under Maintenance</u> ⚠  
 > This repository is currently under maintenance. Please **DO NOT deploy** until further notice. -->
 
-* [![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://t.me/Deendayal_Support_Group)
+* [![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://t.me/rkmoviezip)
 
 First Check our **Demo** bot -
 
-[![Click Here](https://img.shields.io/badge/Demo%20Bot-Click%20Here-blue?style=flat&logo=telegram&labelColor=white&link=https://t.me/Princess_V4_bot)](https://t.me/Princess_V4_bot)
+[![Click Here](https://img.shields.io/badge/Demo%20Bot-Click%20Here-blue?style=flat&logo=telegram&labelColor=white&link=https://t.me/mr_filmy_bot)](https://t.me/mr_filmy_bot)
 
 ## Special Thanks To
 
@@ -27,7 +27,7 @@ First Check our **Demo** bot -
 
 If you encounter any issues **Deploying** the bot, feel free to seek assistance in our **support group**:
 
-[![Join Support Group    ](https://img.shields.io/badge/Join%20Support%20Group-Click%20Here-blue?style=flat&logo=telegram&labelColor=white&link=https://t.me/Deendayal_Support_Group)](https://t.me/Deendayal_Support_Group)
+[![Join Support Group    ](https://img.shields.io/badge/Join%20Support%20Group-Click%20Here-blue?style=flat&logo=telegram&labelColor=white&link=https://t.me/krish_rule)](https://t.me/Krish_rule)
 
 #𝑫𝒐𝒖𝒃𝒍𝒆 𝑫𝑩 𝒔𝒖𝒑𝒑𝒐𝒓𝒕
 
