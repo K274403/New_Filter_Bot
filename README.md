@@ -1,4 +1,4 @@
-<p align="center"> <img src="https://pin.it/4zOnrJINe"> </p>
+<p align="center"> <img src="https://envs.sh/o6V.jpg"> </p>
 <h1 align="center"> 𝑫𝒆𝒆𝒏𝒅𝒂𝒚𝒂𝒍_𝒅𝒉𝒂𝒌𝒂𝒅 </h1>
 
 **OWNER**
