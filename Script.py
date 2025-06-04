@@ -1,5 +1,16 @@
 class script(object):
-    START_TXT = """<b> 🚩 जय श्री राम 🚩\n\n ʜᴇʏ {}, {}\n\n𝒊 𝑨𝒎 𝑻𝒉𝒆 𝑴𝒐𝒔𝒕 𝑷𝒐𝒘𝒆𝒓𝒇𝒖𝒍 𝑨𝒖𝒕𝒐 𝑭𝒊𝒍𝒕𝒆𝒓 𝑩𝒐𝒕 𝑾𝒊𝒕𝒉 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 𝑭𝒆𝒂𝒕𝒖𝒓𝒆.</b>"""
+    START_TXT = """<b>🚨 ALERT: संस्कारी बॉट ऑन ड्यूटी 🚨</b>
+
+Hey {}, {} 👋
+
+💪🤖 I'm not just *any* bot... I’m the 🧠 **Sanskari AI** running on 100% devotion and 200% caffeine!
+
+⚡️ 𝓘 𝓪𝓶 𝓽𝓱𝓮 𝓶𝓸𝓼𝓽 𝓪𝓭𝓿𝓪𝓷𝓬𝓮𝓭 𝓐𝓾𝓽𝓸 𝓕𝓲𝓵𝓽𝓮𝓻 𝓑𝓸𝓽 with:
+- 💎 Premium Vibes
+- 🕉️ Bhakti Mode ON
+- 🔥 24x7 Nonsense Filtering
+
+Type /start before I start filtering your life decisions 😎.</b>"""
 
     GSTART_TXT = """<b>🚩 जय श्री राम 🚩\n\nʜᴇʏ {},\n\n𝒊 𝑨𝒎 𝑻𝒉𝒆 𝑴𝒐𝒔𝒕 𝑷𝒐𝒘𝒆𝒓𝒇𝒖𝒍 𝑨𝒖𝒕𝒐 𝑭𝒊𝒍𝒕𝒆𝒓 𝑩𝒐𝒕 𝑾𝒊𝒕𝒉 𝑷𝒓𝒆𝒎𝒊𝒖𝒎 𝑭𝒆𝒂𝒕𝒖𝒓𝒆.</b>"""
     
