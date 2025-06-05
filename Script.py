@@ -1,8 +1,5 @@
 class script(object):
     START_TXT = """<b>🚨 ALERT: संस्कारी बॉट ऑन ड्यूटी 🚨</b>
-
-Hey {}, {} 👋
-
 ⚡️ 𝓘 𝓪𝓶 𝓽𝓱𝓮 𝓶𝓸𝓼𝓽 𝓪𝓭𝓿𝓪𝓷𝓬𝓮𝓭 𝓐𝓾𝓽𝓸 𝓕𝓲𝓵𝓽𝓮𝓻 𝓑𝓸𝓽 with:
 - 💎 Premium Vibes
 - 🕉️ Bhakti Mode ON
