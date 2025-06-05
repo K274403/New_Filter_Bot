@@ -85,9 +85,9 @@ Nᴀᴍᴇ - {}
 
     CUDNT_FND = """<b>𝑆𝑝𝑒𝑙𝑙𝑖𝑛𝑔 𝑀𝑖𝑠𝑡𝑎𝑘𝑒 𝐵𝑟𝑜 ‼️\n𝐷𝑜𝑛'𝑡 𝑊𝑜𝑟𝑟𝑦 😊 𝐶ℎ𝑜𝑜𝑠𝑒 𝑇ℎ𝑒 𝐶𝑜𝑟𝑟𝑒𝑐𝑡 𝑂𝑛𝑒 𝐵𝑒𝑙𝑜𝑤 👇\n\n<blockquote>नीचे दिए गए विकल्पों में से movie के नाम की सही Spelling चुनें 👇</blockquote></b>"""
 
-    I_CUDNT = """<b>फ़ाइल को ढूंढा बहुत, पर वो मिली नहीं, सिस्टम भी कहता है – अब उसकी उम्मीद बची नहीं... {} 😕
+    I_CUDNT = """<b>📢 Kripya dobara try karein, ya system ki maa-behen mat karein. 😅
 
-📢 Kripya dobara try karein, ya system ki maa-behen mat karein. 😅
+   ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ ɪɴ ɢᴏᴏɢʟᴇ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ 😃
 
 📝 ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 👇
 
